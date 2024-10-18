@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root {
+    --fonte1: verdana, geneva, tahoma, sans-serif;
+    --fonte2: "Passion One", sans-serif;
+    --fonte3: "Sriracha", cursive;
+}
+
 *{
     /* tirar todas as margens */
     margin: 0px;
@@ -7,6 +17,7 @@
 }
 
 html, body {
+    font-family: var(--fonte1);
     /* foi inserido o tamanho minimo e cor de fundo*/
     min-height: 100vh;
     background-color: darkgray;
@@ -20,12 +31,15 @@ header{
 }
 
 header > h1 {
+    font-family: var(--fonte2);
     /* dar espaço da margem de cima */
     padding-top: 50px;
     /* text-transform: upercase joga tudo em letra maiuscula */
     /* text-transform: uppercase;  */
     /* todas as letras no formato maiusculo */
     font-variant: small-caps;
+    /* ajusta o tamnho da fonte */
+    font-size: 10vw;
 }
 
 header > p {
@@ -46,6 +60,7 @@ header a:hover, footer a:hover {
 }
 
 section {
+    font-family: var(--fonte3);
     /* ganha 10% da altura na tela */
     padding-top: 10vh;
     padding-bottom: 10vh;
@@ -53,6 +68,8 @@ section {
     line-height: 2em;
     /* afasta para dentro da tela  */
     padding-left: 30px;
+    font-size: 2em;
+    font-size: 3vw;
 }
 
 section.normal {
@@ -67,9 +84,11 @@ section.imagem {
 }
 
 section.imagem > p {
+    display: inline-block;
+    padding: 5px;
     /* coloca uma caixa no texto */
     background-color: rgba(0, 0, 0, 0.267);
-    width: 400px;
+    
 }
 
 footer {
