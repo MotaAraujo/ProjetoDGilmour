@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+*{
+    /* tirar todas as margens */
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    /* foi inserido o tamanho minimo e cor de fundo*/
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header{
+    /* cor da fonte e centralizar nomes  TOUR SP e sites */
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    /* dar espaço da margem de cima */
+    padding-top: 50px;
+    /* text-transform: upercase joga tudo em letra maiuscula */
+    /* text-transform: uppercase;  */
+    /* todas as letras no formato maiusculo */
+    font-variant: small-caps;
+}
+
+header > p {
+    /* para o cabeçalho ficar simétrico espaço cima e baixo */
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    /* link -cor do texto, tirar o sublinhado e colocar a fonte em negrito */
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    /* link - quando pasar o mouse em cima fica sublihado  */
+    text-decoration: underline;
+}
+
+section {
+    /* ganha 10% da altura na tela */
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    /* espaçamento entre as linhas */
+    line-height: 2em;
+    /* afasta para dentro da tela  */
+    padding-left: 30px;
+}
+
+section.normal {
+    /* muda a cor do fundo da section e estilizou a cor da fonte */
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgba(0, 0, 0, 0.685);
+    color: white;
+}
+
+section.imagem > p {
+    /* coloca uma caixa no texto */
+    background-color: rgba(0, 0, 0, 0.267);
+    width: 400px;
+}
+
+footer {
+    /* mudar a cor da fonte, cor de fundo e centralizar o texto */
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+}
