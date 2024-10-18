@@ -72,6 +72,10 @@ section {
     font-size: 3vw;
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
 section.normal {
     /* muda a cor do fundo da section e estilizou a cor da fonte */
     background-color: white;
@@ -81,6 +85,8 @@ section.normal {
 section.imagem {
     background-color: rgba(0, 0, 0, 0.685);
     color: white;
+    box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.541);
+    background-attachment: fixed;
 }
 
 section.imagem > p {
@@ -88,8 +94,20 @@ section.imagem > p {
     padding: 5px;
     /* coloca uma caixa no texto */
     background-color: rgba(0, 0, 0, 0.267);
+    text-shadow: 1px 1px 0x black;
     
 }
+
+section#img01{
+    background-image: url(../assets/capadgtour.jpg);
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url(../assets/DGblackstrat.jpg);
+    background-size: cover;
+}
+
 
 footer {
     /* mudar a cor da fonte, cor de fundo e centralizar o texto */
